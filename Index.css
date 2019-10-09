@@ -1,0 +1,90 @@
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    z-index: -10000000000000000;
+    background: url("Assets/betterbackground.jpg");
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    justify-content: center;
+    font-size: 19pt;
+    font-weight: bolder;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+#rooms {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+} 
+
+.card{
+    flex: 1;
+}
+*/ 
+.roomtitle {
+/*    border: 1px solid black;*/
+    cursor: pointer;
+    font-size: 18pt;
+    font-style: bold;
+}
+
+.hiddenChildren > * {
+    display: none;
+}
+
+.card {
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.4);
+    transition: 0.5s;
+    width: 2%;
+    align : center;
+    padding: 3px;
+    transition: transform .2s;
+    margin: 0 auto;
+    float: left;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font: 60% verdana, arial, helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-height: 400;
+    overflow-y: scroll;
+  }
+  
+  .card-title{
+      align:center;
+  }
+  .card:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
